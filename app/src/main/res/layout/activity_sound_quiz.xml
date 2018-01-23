@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b53d00"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="com.example.android.quizapp.SoundQuiz">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/piano" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/type"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/yourName"
+                android:paddingTop="8dp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/nickname_sound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/personalData" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/questionsQuizSound"
+            android:text="@string/question1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ef6c00"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playGuitar"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_1_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_1_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_1_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_1_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playViolin"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_2_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_2_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_2_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_2_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playAccordion"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_3_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_3_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_3_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_3_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playDrum"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_4_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_4_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_4_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_4_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playHarmonica"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_5_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_5_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_5_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_5_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playPiano"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_6_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_6_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_6_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_6_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playTriangle"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_7_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_7_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_7_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_7_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playTrumpet"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_8_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_8_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_8_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_8_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playCimbalom"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_9_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_9_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_q9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_9_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_9_4_sounds" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                style="@style/questionsQuizSound"
+                android:text="@string/question10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="playSaxophone"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/speakers" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gr_q10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/a1_q10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_10_1_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a2_q10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_10_2_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a3_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_10_3_sounds" />
+
+                    <RadioButton
+                        android:id="@+id/a4_q10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/answer_10_4_sounds"
+                        android:layout_marginBottom="8dp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkAnswers"
+                android:text="@string/check_results"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
