@@ -29,4 +29,54 @@
         <item name="android:padding">5dp</item>
         <item name="android:background">#2962FF</item>
     </style>
-</resources>
+    <style name ="mainImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="typeText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/type</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="main_liner_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">#bbdefb</item>
+    <item name="android:orientation">vertical</item>
+        <item name="android:weightSum">1</item>
+    </style>
+    <style name="main_scroll_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+<style name="edit_text_style">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:hint">@string/yourName</item>
+    <item name="android:paddingBottom">16dp</item>
+    <item name="android:textSize">18sp</item>
+</style>
+    <style name="anonymous_check_box_style">
+        <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/personalData</item>
+    </style>
+    <style name="flag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+    <style name="radio_group_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="radio_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    </resources>
