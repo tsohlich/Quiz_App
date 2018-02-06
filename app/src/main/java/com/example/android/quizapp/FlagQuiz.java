@@ -109,7 +109,7 @@ public class FlagQuiz extends AppCompatActivity {
     }
 
     //method to display results
-    public void displayResult(View view) {
+    public void displayResult(View view){
         countPoints();
         String quantity;
         String player;
